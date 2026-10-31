@@ -10,6 +10,8 @@
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://github.com/Sweax3169/sweaxclip">SweaxClip</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/Sweax3169/sweaxcut">SWEAXCUT</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://discord.gg/vGZ2DZZsrf">Discord</a>
 </p>
 
@@ -97,6 +99,46 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 </table>
 
 [Download](https://github.com/Sweax3169/sweaxclip/releases/latest) · [Website](https://sweax3169.github.io/sweaxclip/) · [Source](https://github.com/Sweax3169/sweaxclip)
+
+<br>
+
+<a href="https://github.com/Sweax3169/sweaxcut">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxcut-dark.svg">
+    <img alt="SWEAXCUT — a free video editor for Windows. Captions, voice-over and the AI tools run on your PC, without the internet." src="art/sweaxcut-light.svg" width="100%">
+  </picture>
+</a>
+
+**[SWEAXCUT](https://github.com/Sweax3169/sweaxcut)** is a full timeline video editor for Windows, made for people who cut gameplay clips, Shorts and YouTube videos. Captions, voice-over, background removal and stabilisation run on your own PC: no account, no upload, no watermark. The preview and the export are drawn by the same WebGL2 compositor, so what you see while editing is what ends up in the file.
+
+<p align="center">
+  <img alt="The SWEAXCUT editor playing a 16:9 project: an animated title, a cross-zoom cut, then a new transition picked from the browser." src="art/sweaxcut-demo.gif" width="680">
+</p>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Inside**
+- Multi-track timeline with keyframes, speed curves and 9 aspect ratios
+- 197 transitions, 161 effects, 93 colour filters and 137 clip animations, all GLSL
+- whisper.cpp captions, Piper text to speech and MediaPipe background removal, offline
+- Hardware export through NVIDIA NVENC, AMD AMF or Intel Quick Sync
+
+</td>
+<td width="50%" valign="top">
+
+**Shipped with**
+- 777 stickers, 126 text templates and 101 fonts that all contain the Turkish letters
+- 22 music tracks and 102 sound effects synthesised by the app
+- An installer that carries every third-party licence, with source links in the release notes
+- A [website](https://sweax3169.github.io/sweaxcut/) with a small editor that runs the app's own transition shaders
+
+</td>
+</tr>
+</table>
+
+[Download](https://github.com/Sweax3169/sweaxcut/releases/latest) · [Website](https://sweax3169.github.io/sweaxcut/) · [Source](https://github.com/Sweax3169/sweaxcut)
 
 <br>
 
