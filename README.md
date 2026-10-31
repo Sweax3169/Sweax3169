@@ -113,7 +113,7 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 </tr>
 <tr>
 <td width="50%">
-<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxcut-dark.svg"><img alt="SWEAXCUT 2 — a full timeline video editor for Windows that works offline. Electron, TypeScript. Desktop app." src="art/card-sweaxcut-light.svg" width="100%"></picture>
+<a href="https://github.com/Sweax3169/sweaxcut"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxcut-dark.svg"><img alt="SWEAXCUT 2 — a full timeline video editor for Windows that works offline. Electron, React, WebGL2, FFmpeg. Open source." src="art/card-sweaxcut-light.svg" width="100%"></picture></a>
 </td>
 <td width="50%">
 <picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxnext-dark.svg"><img alt="SWEAX NEXT — vocal mixing plugin for rap with 12 vocal chains, 159 automated tests, passes pluginval at strictness 10. C++, JUCE. VST3." src="art/card-sweaxnext-light.svg" width="100%"></picture>

@@ -88,7 +88,7 @@ CARDS = [
     ('sweaxmorph', 'SweaxMorph', ['Drop any file on Morph, pick a format, done.', '126 formats for Windows, offline.'], 'C# · .NET 9 · WPF · FFmpeg · ImageMagick', 'Open source', 'shot', 'morph'),
     ('sweaxterrain', 'Sweax Terrain', ['Roblox Studio plugin that paints terrain:', '9 biomes and 8 ready-made worlds.'], 'Luau · Roblox Studio plugin', 'Plugin', 'code', 'T'),
     ('sweaxclip', 'SweaxClip', ['Permanent, searchable clipboard history for', 'Windows. Replaces Win + V; reads screenshots.'], 'C# · .NET 9 · WPF · SQLite FTS5', 'Open source', 'link', 'deck'),
-    ('sweaxcut', 'SWEAXCUT 2', ['A full timeline video editor for Windows', 'that works completely offline.'], 'Electron · TypeScript', 'Desktop app', 'accent', 'S'),
+    ('sweaxcut', 'SWEAXCUT 2', ['A full timeline video editor for Windows', 'that works completely offline.'], 'Electron · React · WebGL2 · FFmpeg', 'Open source', 'accent', 'S'),
     ('sweaxnext', 'SWEAX NEXT', ['Vocal mixing plugin for rap: 12 vocal chains,', '159 automated tests, pluginval strictness 10.'], 'C++ · JUCE · VST3', 'VST3', 'code', 'N'),
     ('sweaxpanel', 'SweaxPanel', ['Desktop control panel for Minecraft servers', 'over RCON — six tabs, tested on Paper 1.21.'], 'Electron · React · RCON', 'Open source', 'shot', 'P'),
     ('popit', '+1 Speed POP IT', ['Roblox game with session-locked saves and', 'a phone-friendly world of 70,000+ parts.'], 'Luau · Roblox Studio', 'Released', 'image', '+1'),
