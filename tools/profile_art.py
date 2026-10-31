@@ -90,7 +90,7 @@ CARDS = [
     ('sweaxclip', 'SweaxClip', ['Permanent, searchable clipboard history for', 'Windows. Replaces Win + V; reads screenshots.'], 'C# · .NET 9 · WPF · SQLite FTS5', 'Open source', 'link', 'deck'),
     ('sweaxcut', 'SWEAXCUT 2', ['A full timeline video editor for Windows', 'that works completely offline.'], 'Electron · TypeScript', 'Desktop app', 'accent', 'S'),
     ('sweaxnext', 'SWEAX NEXT', ['Vocal mixing plugin for rap: 12 vocal chains,', '159 automated tests, pluginval strictness 10.'], 'C++ · JUCE · VST3', 'VST3', 'code', 'N'),
-    ('sweaxpanel', 'SweaxPanel', ['Desktop control panel for Minecraft servers', 'over RCON — six tabs, tested on Paper 1.21.'], 'Electron · RCON', 'Desktop app', 'shot', 'P'),
+    ('sweaxpanel', 'SweaxPanel', ['Desktop control panel for Minecraft servers', 'over RCON — six tabs, tested on Paper 1.21.'], 'Electron · React · RCON', 'Open source', 'shot', 'P'),
     ('popit', '+1 Speed POP IT', ['Roblox game with session-locked saves and', 'a phone-friendly world of 70,000+ parts.'], 'Luau · Roblox Studio', 'Released', 'image', '+1'),
     ('adana', 'Adana Mücadele', ['Website and member platform for an MMA', 'club, live with real members.'], 'Cloudflare Workers · D1 · R2', 'Live', 'files', 'A'),
 ]

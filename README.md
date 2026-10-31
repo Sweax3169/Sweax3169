@@ -124,7 +124,7 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 <picture><source media="(prefers-color-scheme: dark)" srcset="art/card-popit-dark.svg"><img alt="+1 Speed POP IT — Roblox game with session-locked saves and a phone-friendly world of 70,000+ parts. Luau. Released." src="art/card-popit-light.svg" width="100%"></picture>
 </td>
 <td width="50%">
-<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxpanel-dark.svg"><img alt="SweaxPanel — desktop control panel for Minecraft servers over RCON. Electron. Desktop app." src="art/card-sweaxpanel-light.svg" width="100%"></picture>
+<a href="https://github.com/Sweax3169/sweaxpanel"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxpanel-dark.svg"><img alt="SweaxPanel — desktop control panel for your own Minecraft server over RCON. Electron, React. Open source." src="art/card-sweaxpanel-light.svg" width="100%"></picture></a>
 </td>
 </tr>
 <tr>
