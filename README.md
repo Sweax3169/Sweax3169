@@ -13,7 +13,7 @@ I'm an independent developer from Türkiye, working under **Sweax Studios**. I b
   </picture>
 </a>
 
-**[SweaxClip](https://github.com/Sweax3169/sweaxclip)** is a permanent, searchable clipboard history for Windows. It replaces <kbd>Win</kbd> + <kbd>V</kbd>, keeps text, links, images, screenshots and files across restarts, and finds screenshots by the words inside them using the Windows OCR engine. It follows the Windows 11 theme and accent colour, and uses around 10 MB of memory while idle.
+**[SweaxClip](https://github.com/Sweax3169/sweaxclip)** is a permanent, searchable clipboard history for Windows. It replaces <kbd>Win</kbd> + <kbd>V</kbd>, keeps text, links, images, screenshots and files across restarts, and finds screenshots by the words inside them using the Windows OCR engine. The panel is its own design: a spring-animated deck of cards that opens exactly where Windows opens its panel, with every clip drawn as the object it is — paper, slate, a colour swatch, a screenshot bezel, a manila folder. It uses around 10 MB of memory while idle.
 
 C# · .NET 9 · WPF · Win32 · SQLite FTS5 — [Download](https://github.com/Sweax3169/sweaxclip/releases/latest) · [Website](https://sweax3169.github.io/sweaxclip/)
 
