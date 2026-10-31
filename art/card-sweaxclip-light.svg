@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="SweaxClip">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7F5F1"/><stop offset="1" stop-color="#ECE9E3"/></linearGradient>
+  <linearGradient id="pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F6F2"/></linearGradient>
+  <radialGradient id="g1"><stop offset="0" stop-color="#E4572E" stop-opacity=".16"/><stop offset="1" stop-color="#E4572E" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2"><stop offset="0" stop-color="#6D4FD8" stop-opacity=".10"/><stop offset="1" stop-color="#6D4FD8" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g3"><stop offset="0" stop-color="#0E8F70" stop-opacity=".10"/><stop offset="1" stop-color="#0E8F70" stop-opacity="0"/></radialGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="16"/><feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="sh2" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  
+</defs>
+<rect width="600" height="210" rx="18" fill="url(#pf)"/>
+<rect x=".5" y=".5" width="599" height="209" rx="17.5" fill="none" stroke="rgba(35,32,29,.12)"/>
+<rect x="0" y="30" width="3" height="46" rx="1.5" fill="#2F6BEA"/>
+<g transform="translate(26 30) scale(0.19) translate(128 128) scale(1.1) translate(-128 -132)">
+  <rect x="60" y="40" width="136" height="86" rx="18" fill="#EAD7A8"/>
+  <rect x="76" y="54" width="52" height="9" rx="4.5" fill="#4A3B1F" fill-opacity=".38"/>
+  <rect x="44" y="70" width="168" height="90" rx="20" fill="#1D2027" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="2"/>
+  <rect x="62" y="84" width="60" height="9" rx="4.5" fill="#FFFFFF" fill-opacity=".32"/>
+  <rect x="24" y="104" width="208" height="120" rx="26" fill="#FFFDF8" stroke="#3A2A1A" stroke-opacity=".16" stroke-width="2"/>
+  <circle cx="52" cy="132" r="9" fill="#E4572E"/>
+  <rect x="68" y="127" width="62" height="10" rx="5" fill="#23201D" fill-opacity=".3"/>
+  <rect x="44" y="156" width="164" height="14" rx="7" fill="#23201D" fill-opacity=".78"/>
+  <rect x="44" y="182" width="112" height="14" rx="7" fill="#23201D" fill-opacity=".78"/>
+</g>
+<text x="92" y="60" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="650" fill="#23201D">SweaxClip</text>
+<rect x="454.4" y="36" width="117.6" height="26" rx="8" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/>
+<circle cx="467.4" cy="49" r="3.5" fill="#2F6BEA"/>
+<text x="476.4" y="54" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="rgba(35,32,29,.70)">Open source</text>
+<text x="28" y="116" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(35,32,29,.70)">Permanent, searchable clipboard history for</text>
+<text x="28" y="140" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(35,32,29,.70)">Windows. Replaces Win + V; reads screenshots.</text>
+<text x="28" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="rgba(35,32,29,.45)">C# · .NET 9 · WPF · SQLite FTS5</text>
+</svg>

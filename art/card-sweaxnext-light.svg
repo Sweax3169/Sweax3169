@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="SWEAX NEXT">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7F5F1"/><stop offset="1" stop-color="#ECE9E3"/></linearGradient>
+  <linearGradient id="pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F6F2"/></linearGradient>
+  <radialGradient id="g1"><stop offset="0" stop-color="#E4572E" stop-opacity=".16"/><stop offset="1" stop-color="#E4572E" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2"><stop offset="0" stop-color="#6D4FD8" stop-opacity=".10"/><stop offset="1" stop-color="#6D4FD8" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g3"><stop offset="0" stop-color="#0E8F70" stop-opacity=".10"/><stop offset="1" stop-color="#0E8F70" stop-opacity="0"/></radialGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="16"/><feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="sh2" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  
+</defs>
+<rect width="600" height="210" rx="18" fill="url(#pf)"/>
+<rect x=".5" y=".5" width="599" height="209" rx="17.5" fill="none" stroke="rgba(35,32,29,.12)"/>
+<rect x="0" y="30" width="3" height="46" rx="1.5" fill="#0E8F70"/>
+<rect x="28" y="30" width="46" height="46" rx="13" fill="#0E8F70"/><text x="51" y="61" text-anchor="middle" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#fff">N</text>
+<text x="92" y="60" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="650" fill="#23201D">SWEAX NEXT</text>
+<rect x="507.6" y="36" width="64.4" height="26" rx="8" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/>
+<circle cx="520.6" cy="49" r="3.5" fill="#0E8F70"/>
+<text x="529.6" y="54" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="rgba(35,32,29,.70)">VST3</text>
+<text x="28" y="116" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(35,32,29,.70)">Vocal mixing plugin for rap: 12 vocal chains,</text>
+<text x="28" y="140" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(35,32,29,.70)">159 automated tests, pluginval strictness 10.</text>
+<text x="28" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="rgba(35,32,29,.45)">C++ · JUCE · VST3</text>
+</svg>

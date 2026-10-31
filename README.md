@@ -1,37 +1,130 @@
-## Hi, I'm Sweax
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="art/banner-dark.svg">
+  <img alt="Sweax — independent developer at Sweax Studios, Türkiye. I build Windows apps, audio plugins, Roblox games and web apps, and ship each one all the way." src="art/banner-light.svg" width="100%">
+</picture>
 
-I'm an independent developer from Türkiye, working under **Sweax Studios**. I build Windows software, audio plugins, Roblox games and web apps, and I take each one all the way to release: code, interface, installer and documentation. I also produce rap beats, which is why some of my tools are about sound.
+<p align="center">
+  <a href="https://sweaxstudios.xyz"><b>sweaxstudios.xyz</b></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/Sweax3169/sweaxclip">SweaxClip</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://discord.gg/vGZ2DZZsrf">Discord</a>
+</p>
 
-[sweaxstudios.xyz](https://sweaxstudios.xyz) · [Discord](https://discord.gg/vGZ2DZZsrf)
+<br>
 
-### Featured: SweaxClip
+I'm an independent developer from Türkiye, working as **Sweax Studios**. I build native Windows software, audio plugins, Roblox games and web platforms, and I take each one all the way to release — code, interface, installer, tests and documentation. I also produce rap beats, which is why some of my tools are about sound.
+
+<br>
+
+## Featured
 
 <a href="https://github.com/Sweax3169/sweaxclip">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sweax3169/sweaxclip/main/docs/shots/en/hero-dark.png">
-    <img alt="SweaxClip — clipboard history for Windows" src="https://raw.githubusercontent.com/Sweax3169/sweaxclip/main/docs/shots/en/hero-light.png">
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxclip-dark.svg">
+    <img alt="SweaxClip — everything you copy, kept. Press Win + V and it is right where you type." src="art/sweaxclip-light.svg" width="100%">
   </picture>
 </a>
 
-**[SweaxClip](https://github.com/Sweax3169/sweaxclip)** is a permanent, searchable clipboard history for Windows. It replaces <kbd>Win</kbd> + <kbd>V</kbd>, keeps text, links, images, screenshots and files across restarts, and finds screenshots by the words inside them using the Windows OCR engine. The panel is its own design: a spring-animated deck of cards that opens exactly where Windows opens its panel, with every clip drawn as the object it is — paper, slate, a colour swatch, a screenshot bezel, a manila folder. It uses around 10 MB of memory while idle.
+**[SweaxClip](https://github.com/Sweax3169/sweaxclip)** replaces <kbd>Win</kbd> + <kbd>V</kbd> on Windows with a history that never forgets. Everything you copy — text, links, code, colours, images, screenshots, files — is kept on your own disk and comes back as a timeline right under your text cursor. Screenshots are searchable by the words inside them through the Windows OCR engine, and the whole thing waits in the tray at about 10 MB.
 
-C# · .NET 9 · WPF · Win32 · SQLite FTS5 — [Download](https://github.com/Sweax3169/sweaxclip/releases/latest) · [Website](https://sweax3169.github.io/sweaxclip/)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### Projects
+**Inside**
+- Native C# / WPF on .NET 9, talking to Win32 directly
+- SQLite in WAL mode with an FTS5 trigram index
+- Low-level keyboard hook and accessibility caret lookup
+- Spring physics for every movement in the panel
+
+</td>
+<td width="50%" valign="top">
+
+**Shipped with**
+- Self-contained single-file build from GitHub Actions
+- English and Turkish, light and dark
+- README media rendered by the app itself
+- A [website](https://sweax3169.github.io/sweaxclip/) with a working copy of the panel
+
+</td>
+</tr>
+</table>
+
+[Download](https://github.com/Sweax3169/sweaxclip/releases/latest) · [Website](https://sweax3169.github.io/sweaxclip/) · [Source](https://github.com/Sweax3169/sweaxclip)
+
+<br>
+
+## Selected work
+
+<table>
+<tr>
+<td width="50%">
+<a href="https://github.com/Sweax3169/sweaxclip"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxclip-dark.svg"><img alt="SweaxClip — permanent, searchable clipboard history for Windows. C#, .NET 9, WPF, SQLite FTS5. Open source." src="art/card-sweaxclip-light.svg" width="100%"></picture></a>
+</td>
+<td width="50%">
+<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxcut-dark.svg"><img alt="SWEAXCUT 2 — a full timeline video editor for Windows that works offline. Electron, TypeScript. Desktop app." src="art/card-sweaxcut-light.svg" width="100%"></picture>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxnext-dark.svg"><img alt="SWEAX NEXT — vocal mixing plugin for rap with 12 vocal chains, 159 automated tests, passes pluginval at strictness 10. C++, JUCE. VST3." src="art/card-sweaxnext-light.svg" width="100%"></picture>
+</td>
+<td width="50%">
+<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-popit-dark.svg"><img alt="+1 Speed POP IT — Roblox game with session-locked saves and a phone-friendly world of 70,000+ parts. Luau. Released." src="art/card-popit-light.svg" width="100%"></picture>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxpanel-dark.svg"><img alt="SweaxPanel — desktop control panel for Minecraft servers over RCON. Electron. Desktop app." src="art/card-sweaxpanel-light.svg" width="100%"></picture>
+</td>
+<td width="50%">
+<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-adana-dark.svg"><img alt="Adana Mücadele — website and member platform for an MMA club. Cloudflare Workers, D1, R2. Live." src="art/card-adana-light.svg" width="100%"></picture>
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>More projects</b></summary>
+<br>
 
 | Project | What it is | Built with | Status |
 | --- | --- | --- | --- |
-| [SweaxClip](https://github.com/Sweax3169/sweaxclip) | Clipboard history for Windows with OCR search | C#, WPF, SQLite | Open source |
-| SWEAXCUT 2 | Timeline video editor for Windows that works offline | Electron, TypeScript | Desktop app |
-| SweaxPanel | Control panel for Minecraft servers over RCON | Electron | Desktop app |
-| SWEAX NEXT | Vocal mixing plugin for rap vocals — 12 vocal chains, 159 automated tests, passes pluginval at strictness 10 | C++, JUCE | VST3 |
 | Sweax Rhythm Trainer | Metronome, tap tempo and auto-quantize for practising timing | C++, JUCE | VST3 |
-| +1 Speed POP IT | Roblox game with session-locked saves and a mobile streaming system for 70,000+ parts | Luau | Released |
 | RNG Zombie Defense | Roblox wave-defense game: 40 waves, 11 themes, 17 languages | Luau | In development |
 | Maden Farm | Roblox mining tycoon with client-side ore physics at 60 FPS | Luau | In development |
-| Adana Mücadele | Website and member platform for an MMA club | Cloudflare Workers, D1, Durable Objects, R2 | Live |
 | Sweax Terrain | Roblox Studio plugin that generates terrain — 9 biomes, 8 ready-made worlds | Luau | Plugin |
 
-### Tools
+</details>
 
-**Desktop:** C#, .NET, WPF, Win32, Electron · **Audio:** C++, JUCE, VST3 · **Games:** Luau, Roblox Studio, Blender · **Web:** TypeScript, Node.js, Cloudflare Workers, D1, R2 · **Other:** SQLite, Python, Java, Git, GitHub Actions
+<br>
+
+## How I work
+
+- **All the way to release.** A project isn't done when it runs on my machine. It is done when it has an installer, a page that explains it and a build anyone can check.
+- **Measured, not guessed.** SWEAX NEXT runs 159 automated tests and passes pluginval at its strictest level; SweaxClip's memory use is measured on a real machine before a number goes in its README.
+- **Interfaces with their own character.** Each product gets a look that comes from what it is — SweaxClip's panel is a timeline of your clips, not a generic list.
+
+<br>
+
+## Tools
+
+<p>
+  <img alt="C#" src="https://img.shields.io/badge/C%23-23201D?style=flat-square&logo=dotnet&logoColor=white">
+  <img alt=".NET" src="https://img.shields.io/badge/.NET%209-512BD4?style=flat-square&logo=dotnet&logoColor=white">
+  <img alt="WPF" src="https://img.shields.io/badge/WPF%20%C2%B7%20Win32-23201D?style=flat-square&logo=windows&logoColor=white">
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white">
+  <img alt="JUCE" src="https://img.shields.io/badge/JUCE%20%C2%B7%20VST3-8DC63F?style=flat-square&logoColor=white">
+  <img alt="Luau" src="https://img.shields.io/badge/Luau%20%C2%B7%20Roblox-23201D?style=flat-square&logo=roblox&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Electron" src="https://img.shields.io/badge/Electron-2B2E3A?style=flat-square&logo=electron&logoColor=9FEAF9">
+  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white">
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="Blender" src="https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=blender&logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
+</p>
+
+<br>
+
+<p align="center"><sub>Sweax Studios · Türkiye · <a href="https://sweaxstudios.xyz">sweaxstudios.xyz</a></sub></p>

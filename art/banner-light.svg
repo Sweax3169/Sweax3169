@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="Sweax — independent developer, Sweax Studios">
+<style>
+  .f1,.f2,.f3,.f4{animation:bob 7s ease-in-out infinite}
+  .f2{animation-delay:-1.8s}.f3{animation-delay:-3.6s}.f4{animation-delay:-5.4s}
+  @keyframes bob{50%{transform:translateY(-7px)}}
+  .m{animation:lvl 1.2s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:bottom}
+  @keyframes lvl{from{transform:scaleY(.55)}to{transform:scaleY(1)}}
+  .xp{animation:xp 4s ease-in-out infinite}
+  @keyframes xp{0%{width:40px}70%,100%{width:150px}}
+  @media (prefers-reduced-motion: reduce){.f1,.f2,.f3,.f4,.m,.xp{animation:none}}
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7F5F1"/><stop offset="1" stop-color="#ECE9E3"/></linearGradient>
+  <linearGradient id="pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F6F2"/></linearGradient>
+  <radialGradient id="g1"><stop offset="0" stop-color="#E4572E" stop-opacity=".16"/><stop offset="1" stop-color="#E4572E" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2"><stop offset="0" stop-color="#6D4FD8" stop-opacity=".10"/><stop offset="1" stop-color="#6D4FD8" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g3"><stop offset="0" stop-color="#0E8F70" stop-opacity=".10"/><stop offset="1" stop-color="#0E8F70" stop-opacity="0"/></radialGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="16"/><feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="sh2" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  
+</defs>
+<rect width="1280" height="400" rx="24" fill="url(#bg)"/>
+<ellipse cx="1000" cy="80" rx="420" ry="260" fill="url(#g1)"/>
+<ellipse cx="780" cy="420" rx="380" ry="200" fill="url(#g2)"/>
+<ellipse cx="1240" cy="380" rx="260" ry="200" fill="url(#g3)"/>
+<rect x=".5" y=".5" width="1279" height="399" rx="23.5" fill="none" stroke="rgba(35,32,29,.12)"/>
+<text x="84" y="104" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(35,32,29,.45)">Independent developer · Sweax Studios · Türkiye</text>
+<text x="80" y="186" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-2" fill="#23201D">Sweax</text>
+<text x="84" y="240" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" fill="rgba(35,32,29,.70)">I build Windows apps, audio plugins, Roblox games</text>
+<text x="84" y="270" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" fill="rgba(35,32,29,.70)">and web apps — and ship each one all the way.</text>
+<g font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600">
+  <rect x="84" y="306" width="96" height="30" rx="9" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/><circle cx="100" cy="321" r="4" fill="#2F6BEA"/><text x="112" y="326" fill="rgba(35,32,29,.70)">Windows</text>
+  <rect x="190" y="306" width="78" height="30" rx="9" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/><circle cx="206" cy="321" r="4" fill="#0E8F70"/><text x="218" y="326" fill="rgba(35,32,29,.70)">Audio</text>
+  <rect x="278" y="306" width="84" height="30" rx="9" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/><circle cx="294" cy="321" r="4" fill="#E4572E"/><text x="306" y="326" fill="rgba(35,32,29,.70)">Games</text>
+  <rect x="372" y="306" width="64" height="30" rx="9" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/><circle cx="388" cy="321" r="4" fill="#6D4FD8"/><text x="400" y="326" fill="rgba(35,32,29,.70)">Web</text>
+</g>
+<g class="f1"><g filter="url(#sh2)"><rect x="720" y="40" width="190" height="150" rx="14" fill="url(#pf)" stroke="rgba(35,32,29,.12)"/></g>
+<rect x="736" y="56" width="90" height="8" rx="4" fill="rgba(35,32,29,.12)"/><line x1="750" y1="80" x2="750" y2="180" stroke="rgba(35,32,29,.13)"/>
+<rect x="758" y="80" width="140" height="20" rx="6" fill="rgba(35,32,29,.05)" stroke="#E4572E" stroke-opacity=".35"/><circle cx="750" cy="90" r="3" fill="#E4572E"/><rect x="762" y="86" width="120" height="7" rx="3.5" fill="rgba(35,32,29,.26)"/><circle cx="750" cy="112" r="3" fill="#2F6BEA"/><rect x="762" y="108" width="90" height="7" rx="3.5" fill="rgba(35,32,29,.12)"/><circle cx="750" cy="134" r="3" fill="#6D4FD8"/><rect x="762" y="130" width="110" height="7" rx="3.5" fill="rgba(35,32,29,.12)"/><circle cx="750" cy="156" r="3" fill="#0E8F70"/><rect x="762" y="152" width="70" height="7" rx="3.5" fill="rgba(35,32,29,.12)"/></g>
+<g class="f2"><g filter="url(#sh2)"><rect x="930" y="74" width="190" height="150" rx="14" fill="url(#pf)" stroke="rgba(35,32,29,.12)"/></g><circle cx="970" cy="134" r="19" fill="#1D2027" stroke="rgba(35,32,29,.12)"/><path d="M970 134 L970 118" stroke="#E4572E" stroke-width="3" stroke-linecap="round" transform="rotate(20 970 134)"/><circle cx="1025" cy="134" r="19" fill="#1D2027" stroke="rgba(35,32,29,.12)"/><path d="M1025 134 L1025 118" stroke="#0E8F70" stroke-width="3" stroke-linecap="round" transform="rotate(-50 1025 134)"/><circle cx="1080" cy="134" r="19" fill="#1D2027" stroke="rgba(35,32,29,.12)"/><path d="M1080 134 L1080 118" stroke="#2F6BEA" stroke-width="3" stroke-linecap="round" transform="rotate(60 1080 134)"/><rect x="952" y="184" width="7" height="18" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.0s"/><rect x="963" y="176" width="7" height="26" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.09s"/><rect x="974" y="168" width="7" height="34" rx="2" fill="#E4572E" class="m" style="animation-delay:0.18s"/><rect x="985" y="180" width="7" height="22" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.27s"/><rect x="996" y="188" width="7" height="14" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.36s"/><rect x="1007" y="172" width="7" height="30" rx="2" fill="#E4572E" class="m" style="animation-delay:0.44999999999999996s"/><rect x="1018" y="164" width="7" height="38" rx="2" fill="#E4572E" class="m" style="animation-delay:0.54s"/><rect x="1029" y="182" width="7" height="20" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.63s"/><rect x="1040" y="190" width="7" height="12" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.72s"/><rect x="1051" y="174" width="7" height="28" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.8099999999999999s"/><rect x="1062" y="186" width="7" height="16" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.8999999999999999s"/><rect x="1073" y="178" width="7" height="24" rx="2" fill="#0E8F70" class="m" style="animation-delay:0.99s"/><rect x="1084" y="170" width="7" height="32" rx="2" fill="#E4572E" class="m" style="animation-delay:1.08s"/><rect x="1095" y="184" width="7" height="18" rx="2" fill="#0E8F70" class="m" style="animation-delay:1.17s"/></g>
+<g class="f3"><g filter="url(#sh2)"><rect x="760" y="214" width="190" height="150" rx="14" fill="url(#pf)" stroke="rgba(35,32,29,.12)"/></g>
+<rect x="774" y="228" width="54" height="16" rx="5" fill="#E4572E" opacity=".85"/><rect x="910" y="228" width="26" height="16" rx="5" fill="rgba(35,32,29,.26)"/>
+<rect x="820" y="304" width="24" height="24" rx="4" fill="#5CB85C" opacity=".92"/><rect x="846" y="304" width="24" height="24" rx="4" fill="#5CB85C" opacity=".92"/><rect x="872" y="304" width="24" height="24" rx="4" fill="#8B5A2B" opacity=".92"/><rect x="820" y="278" width="24" height="24" rx="4" fill="#8B5A2B" opacity=".92"/><rect x="846" y="278" width="24" height="24" rx="4" fill="#E4572E" opacity=".92"/><rect x="872" y="278" width="24" height="24" rx="4" fill="#8B5A2B" opacity=".92"/><rect x="846" y="252" width="24" height="24" rx="4" fill="#7DA8FF" opacity=".92"/><rect x="780" y="344" width="150" height="6" rx="3" fill="rgba(35,32,29,.12)"/><rect x="780" y="344" width="96" height="6" rx="3" fill="#0E8F70" class="xp"/></g>
+<g class="f4"><g filter="url(#sh2)"><rect x="970" y="236" width="190" height="150" rx="14" fill="url(#pf)" stroke="rgba(35,32,29,.12)"/></g>
+<circle cx="988" cy="254" r="4" fill="#E4572E"/><circle cx="1001" cy="254" r="4" fill="#96701E"/><circle cx="1014" cy="254" r="4" fill="#0E8F70"/>
+<rect x="1028" y="248" width="118" height="12" rx="6" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/>
+<rect x="986" y="276" width="158" height="44" rx="8" fill="#1D2027"/><rect x="998" y="290" width="80" height="8" rx="4" fill="#fff" opacity=".85"/><rect x="998" y="304" width="54" height="6" rx="3" fill="#fff" opacity=".4"/>
+<rect x="986" y="330" width="74" height="40" rx="7" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/><rect x="1070" y="330" width="74" height="40" rx="7" fill="rgba(35,32,29,.05)" stroke="rgba(35,32,29,.12)"/>
+<rect x="996" y="342" width="40" height="6" rx="3" fill="#2F6BEA"/><rect x="1080" y="342" width="40" height="6" rx="3" fill="#E4572E"/></g>
+</svg>
