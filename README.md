@@ -105,14 +105,14 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 <a href="https://github.com/Sweax3169/sweaxcut">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="art/sweaxcut-dark.svg">
-    <img alt="SWEAXCUT — a free video editor for Windows. Captions, voice-over and the AI tools run on your PC, without the internet." src="art/sweaxcut-light.svg" width="100%">
+    <img alt="SWEAXCUT: video editor for Windows. Automatic captions, one-click edits and a WebGL2 timeline, all running on your PC." src="art/sweaxcut-light.svg" width="100%">
   </picture>
 </a>
 
-**[SWEAXCUT](https://github.com/Sweax3169/sweaxcut)** is a full timeline video editor for Windows, made for people who cut gameplay clips, Shorts and YouTube videos. Captions, voice-over, background removal and stabilisation run on your own PC: no account, no upload, no watermark. The preview and the export are drawn by the same WebGL2 compositor, so what you see while editing is what ends up in the file.
+**[SWEAXCUT](https://github.com/Sweax3169/sweaxcut)** is a timeline video editor for Windows, made for people who cut gameplay clips, Shorts and YouTube videos. Version 3 was redrawn from scratch. Drop clips on a recipe and the edit builds itself: a beat-cut montage, a talking video with captions, game highlights. Captions are written word by word on your own PC, edited like a document and restyled live, and the preview and the export are drawn by the same WebGL2 compositor.
 
 <p align="center">
-  <img alt="The SWEAXCUT editor playing a 16:9 project: an animated title, a cross-zoom cut, then a new transition picked from the browser." src="art/sweaxcut-demo.gif" width="680">
+  <img alt="SWEAXCUT 3: the home screen, a beat-cut montage built from a recipe, word-by-word captions restyled live, the command palette and the export window." src="art/sweaxcut-demo.gif" width="680">
 </p>
 
 <table>
@@ -120,10 +120,10 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 <td width="50%" valign="top">
 
 **Inside**
-- Multi-track timeline with keyframes, speed curves and 9 aspect ratios
+- Six one-click recipes, an eight-step "Polish" and eight looks; Ctrl+K reaches every tool
+- whisper.cpp captions you can split, merge, retime and restyle, with 45 styles plus your own
 - 197 transitions, 161 effects, 93 colour filters and 137 clip animations, all GLSL
-- whisper.cpp captions, Piper text to speech and MediaPipe background removal, offline
-- Hardware export through NVIDIA NVENC, AMD AMF or Intel Quick Sync
+- Keyframes with a bezier curve editor, colour scopes, and hardware export (NVENC, AMF, Quick Sync)
 
 </td>
 <td width="50%" valign="top">
@@ -155,7 +155,7 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 </tr>
 <tr>
 <td width="50%">
-<a href="https://github.com/Sweax3169/sweaxcut"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxcut-dark.svg"><img alt="SWEAXCUT 2 — a full timeline video editor for Windows that works offline. Electron, React, WebGL2, FFmpeg. Open source." src="art/card-sweaxcut-light.svg" width="100%"></picture></a>
+<a href="https://github.com/Sweax3169/sweaxcut"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxcut-dark.svg"><img alt="SWEAXCUT 3 — an offline video editor for Windows with one-click edits and word-by-word captions you can restyle. Electron, React, WebGL2, FFmpeg, whisper.cpp. Open source." src="art/card-sweaxcut-light.svg" width="100%"></picture></a>
 </td>
 <td width="50%">
 <picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxnext-dark.svg"><img alt="SWEAX NEXT — vocal mixing plugin for rap with 12 vocal chains, 159 automated tests, passes pluginval at strictness 10. C++, JUCE. VST3." src="art/card-sweaxnext-light.svg" width="100%"></picture>

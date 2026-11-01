@@ -88,7 +88,7 @@ CARDS = [
     ('sweaxmorph', 'SweaxMorph', ['Drop any file on Morph, pick a format, done.', '126 formats for Windows, offline.'], 'C# · .NET 9 · WPF · FFmpeg · ImageMagick', 'Open source', 'shot', 'morph'),
     ('sweaxterrain', 'Sweax Terrain', ['Roblox Studio plugin that paints terrain:', '9 biomes and 8 ready-made worlds.'], 'Luau · Roblox Studio plugin', 'Plugin', 'code', 'T'),
     ('sweaxclip', 'SweaxClip', ['Permanent, searchable clipboard history for', 'Windows. Replaces Win + V; reads screenshots.'], 'C# · .NET 9 · WPF · SQLite FTS5', 'Open source', 'link', 'deck'),
-    ('sweaxcut', 'SWEAXCUT 2', ['A full timeline video editor for Windows', 'that works completely offline.'], 'Electron · React · WebGL2 · FFmpeg', 'Open source', 'accent', 'S'),
+    ('sweaxcut', 'SWEAXCUT 3', ['Offline video editor for Windows: one-click', 'edits, word-by-word captions you can restyle.'], 'Electron · React · WebGL2 · FFmpeg · whisper.cpp', 'Open source', 'accent', 'cut'),
     ('sweaxnext', 'SWEAX NEXT', ['Vocal mixing plugin for rap: 12 vocal chains,', '159 automated tests, pluginval strictness 10.'], 'C++ · JUCE · VST3', 'VST3', 'code', 'N'),
     ('sweaxpanel', 'SweaxPanel', ['Desktop control panel for Minecraft servers', 'over RCON — six tabs, tested on Paper 1.21.'], 'Electron · React · RCON', 'Open source', 'shot', 'P'),
     ('popit', '+1 Speed POP IT', ['Roblox game with session-locked saves and', 'a phone-friendly world of 70,000+ parts.'], 'Luau · Roblox Studio', 'Released', 'image', '+1'),
@@ -105,10 +105,19 @@ def morph_icon(cx, cy, r):
 <path d="M{cx - r * .12} {cy + r * .16} Q{cx} {cy + r * .27} {cx + r * .12} {cy + r * .16}" stroke="#2B2140" stroke-width="{r * .07}" stroke-linecap="round" fill="none"/>'''
 
 
+def cut_icon(x, y, size):
+    """SWEAXCUT's mark: a frame cut on the diagonal, the red half slid along the cut (24-unit grid)."""
+    k = size / 24
+    P = lambda a, b: f"{x + a * k:.1f},{y + b * k:.1f}"
+    left = f"M{P(6, 3)} L{P(13.7, 3)} L{P(8.7, 21)} L{P(6, 21)} Q{P(3, 21)} {P(3, 18)} L{P(3, 6)} Q{P(3, 3)} {P(6, 3)} Z"
+    right = f"M{P(15.3, 3)} L{P(18, 3)} Q{P(21, 3)} {P(21, 6)} L{P(21, 18)} Q{P(21, 21)} {P(18, 21)} L{P(10.3, 21)} Z"
+    return f'''<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="13" fill="#13161C"/><path d="{left}" fill="#F4F6FA"/><path d="{right}" fill="#FF4B3E" transform="translate({0.5 * k:.1f} {-1.3 * k:.1f})"/>'''
+
+
 def card(theme, key, name, lines, stack, status, hue, initial):
     c = T[theme]
     W, H = 600, 210
-    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
+    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
     sw = 34 + 7.6 * len(status)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{name}">
 {defs(c)}
