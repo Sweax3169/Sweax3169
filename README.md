@@ -183,6 +183,46 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 
 <br>
 
+<a href="https://github.com/Sweax3169/sweaxnext">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxnext-dark.svg">
+    <img alt="SweaxNext: a vocal mix plug-in for rap. It hears the take first, then fixes only what needs fixing. VST3 for Windows." src="art/sweaxnext-light.svg" width="100%">
+  </picture>
+</a>
+
+**[SweaxNext](https://github.com/Sweax3169/sweaxnext)** is a VST3 plug-in that mixes rap vocals. Put it on the vocal channel, press analyse and play the verse. It measures every phrase and names what is wrong (mic pops, harsh esses, room noise, hum, lines recorded at different levels), builds a chain for one of 16 styles, renders that chain offline on what it heard, measures again, and then hands you the result as ordinary parameters you can tweak, automate and undo.
+
+<p align="center">
+  <img alt="SweaxNext drawing itself: the role is picked, the vocal is analysed while it plays, the mix is ready, original and processed are compared and the tabs are opened." src="art/sweaxnext-demo.gif" width="680">
+</p>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Inside**
+- 20 modules in C++ on JUCE, from a gate and a true-peak limiter to spectral resonance smoothing and formant shift
+- 22 problem checks, a rule-based planner with its own chain order per style, and an offline render-and-measure loop
+- An audio thread that never waits, locks or allocates; analysis and planning run on their own threads
+- Latency fixed per quality mode and reported to the host
+
+</td>
+<td width="50%" valign="top">
+
+**Shipped with**
+- 159 automated tests and pluginval at strictness 10
+- A demo take built from scratch (synthetic voice, synthesised beat) rendered through all 16 styles
+- README pictures and videos drawn by the plug-in itself, off-screen
+- A [website](https://sweax3169.github.io/sweaxnext/) where you switch styles and A/B the real renders over a beat
+
+</td>
+</tr>
+</table>
+
+[Download](https://github.com/Sweax3169/sweaxnext/releases/latest) · [Website](https://sweax3169.github.io/sweaxnext/) · [Source](https://github.com/Sweax3169/sweaxnext)
+
+<br>
+
 ## Selected work
 
 <table>
@@ -199,7 +239,7 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 <a href="https://github.com/Sweax3169/sweaxcut"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxcut-dark.svg"><img alt="SWEAXCUT 3 — an offline video editor for Windows with one-click edits and word-by-word captions you can restyle. Electron, React, WebGL2, FFmpeg, whisper.cpp. Open source." src="art/card-sweaxcut-light.svg" width="100%"></picture></a>
 </td>
 <td width="50%">
-<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxnext-dark.svg"><img alt="SWEAX NEXT — vocal mixing plugin for rap with 12 vocal chains, 159 automated tests, passes pluginval at strictness 10. C++, JUCE. VST3." src="art/card-sweaxnext-light.svg" width="100%"></picture>
+<a href="https://github.com/Sweax3169/sweaxnext"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxnext-dark.svg"><img alt="SweaxNext — vocal mix plug-in for rap: hears the take first, 16 styles, 159 tests, pluginval strictness 10. C++, JUCE, VST3. Open source." src="art/card-sweaxnext-light.svg" width="100%"></picture></a>
 </td>
 </tr>
 <tr>

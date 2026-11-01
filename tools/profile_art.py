@@ -89,7 +89,7 @@ CARDS = [
     ('sweaxterrain', 'Sweax Terrain', ['Roblox Studio plugin: worlds from 9 blended biomes,', 'a brush and box eraser, 54 structures.'], 'Luau · Roblox Studio plugin · WebGL2 demo', 'Open source', 'code', 'terrain'),
     ('sweaxclip', 'SweaxClip', ['Permanent, searchable clipboard history for', 'Windows. Replaces Win + V; reads screenshots.'], 'C# · .NET 9 · WPF · SQLite FTS5', 'Open source', 'link', 'deck'),
     ('sweaxcut', 'SWEAXCUT 3', ['Offline video editor for Windows: one-click', 'edits, word-by-word captions you can restyle.'], 'Electron · React · WebGL2 · FFmpeg · whisper.cpp', 'Open source', 'accent', 'cut'),
-    ('sweaxnext', 'SWEAX NEXT', ['Vocal mixing plugin for rap: 12 vocal chains,', '159 automated tests, pluginval strictness 10.'], 'C++ · JUCE · VST3', 'VST3', 'code', 'N'),
+    ('sweaxnext', 'SweaxNext', ['Vocal mix plug-in for rap: hears the take', 'first, 16 styles, 159 tests, pluginval 10.'], 'C++ · JUCE · VST3', 'Open source', 'code', 'next'),
     ('sweaxbeacon', 'SweaxBeacon', ['Minecraft Java powers, items and world controls', 'on a server, a LAN world or single-player.'], 'Electron · React · C# · RCON', 'Open source', 'shot', 'beacon'),
     ('robloxgames', 'Roblox Games', ['Sweax Studios games on Roblox: two released,', 'one in development, each with its own page.'], 'Luau · Roblox Studio · GitHub Pages', 'Website', 'image', 'games'),
     ('adana', 'Adana Mücadele', ['Website and member platform for an MMA', 'club, live with real members.'], 'Cloudflare Workers · D1 · R2', 'Live', 'files', 'A'),
@@ -103,6 +103,15 @@ def morph_icon(cx, cy, r):
 <ellipse cx="{cx - r * .42}" cy="{cy - r * .5}" rx="{r * .28}" ry="{r * .13}" fill="#fff" opacity=".55" transform="rotate(-28 {cx - r * .42} {cy - r * .5})"/>
 <ellipse cx="{cx - r * .31}" cy="{cy - r * .06}" rx="{r * .1}" ry="{r * .13}" fill="#2B2140"/><ellipse cx="{cx + r * .31}" cy="{cy - r * .06}" rx="{r * .1}" ry="{r * .13}" fill="#2B2140"/>
 <path d="M{cx - r * .12} {cy + r * .16} Q{cx} {cy + r * .27} {cx + r * .12} {cy + r * .16}" stroke="#2B2140" stroke-width="{r * .07}" stroke-linecap="round" fill="none"/>'''
+
+
+def next_icon(x, y, size):
+    """SweaxNext's mark: the plug-in's knob arc, gold (the raw take) turning teal (the processed vocal)."""
+    cx, cy, r = x + size / 2, y + size / 2, size * 0.36
+    return (f'<defs><linearGradient id="nxg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#E2B558"/><stop offset="1" stop-color="#4AB9C4"/></linearGradient></defs>'
+            f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="13" fill="#0B0E14"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#nxg)" stroke-width="{size * 0.13:.1f}" stroke-linecap="round" stroke-dasharray="{2 * 3.1416 * r * 0.78:.1f} 999" transform="rotate(130 {cx} {cy})"/>'
+            f'<line x1="{cx}" y1="{cy}" x2="{cx}" y2="{cy - r * 0.62:.1f}" stroke="#F0EBE1" stroke-width="{size * 0.08:.1f}" stroke-linecap="round"/>')
 
 
 def cut_icon(x, y, size):
@@ -150,7 +159,7 @@ def terrain_icon(x, y, size):
 def card(theme, key, name, lines, stack, status, hue, initial):
     c = T[theme]
     W, H = 600, 210
-    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else terrain_icon(28, 30, 46) if initial == 'terrain' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
+    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else next_icon(28, 30, 46) if initial == 'next' else terrain_icon(28, 30, 46) if initial == 'terrain' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
     sw = 34 + 7.6 * len(status)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{name}">
 {defs(c)}
