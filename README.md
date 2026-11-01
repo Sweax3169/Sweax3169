@@ -183,6 +183,44 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 
 <br>
 
+<a href="https://github.com/Sweax3169/sweaxbrush">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxbrush-dark.svg">
+    <img alt="Sweax Brush: details, props and parts on any surface in Roblox Studio. A real scatter stroke seen from above, objects landing along the brush ring." src="art/sweaxbrush-light.svg" width="100%">
+  </picture>
+</a>
+
+**[Sweax Brush](https://github.com/Sweax3169/sweaxbrush)** is a detailing brush for Roblox Studio. Pick Models or Parts in the Explorer and put them on any surface: one at a time behind a see-through preview, scattered under a brush ring with spacing and random turns and sizes, drawn to the size you drag, or stacked on a block grid. The eraser removes only what the brush placed, every click or drag is one <kbd>Ctrl</kbd> + <kbd>Z</kbd>, and the panel speaks English and Turkish.
+
+<p align="center">
+  <img alt="The brush scatters rocks, grass, flowers and mushrooms across a slope and a lawn; crates, barrels and lamps are placed on the floor, on a wall and under a ledge; blocks stack into stairs." src="art/sweaxbrush-demo.gif" width="680">
+</p>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Inside**
+- 22 Luau modules: surface rules for floors, walls and ceilings, disc sampling with a minimum spacing, a block grid that stacks, drawing on any surface plane
+- One undo step per click, drag, draw or clear; no web requests and no assets
+- A cutting-mat panel with ruler sliders that follows Studio's light or dark theme
+
+</td>
+<td width="50%" valign="top">
+
+**Shipped with**
+- README clips drawn from real plugin output: a test place dressed by the plugin's own controllers, read back part by part and rendered in Blender
+- A [website](https://sweax3169.github.io/sweaxbrush/) where the plugin's panel and placement math run in the browser on a board dumped from Studio
+- An import of presets from Detail Brush, the plugin's earlier private name
+
+</td>
+</tr>
+</table>
+
+[Download](https://github.com/Sweax3169/sweaxbrush/releases/latest) · [Website](https://sweax3169.github.io/sweaxbrush/) · [Source](https://github.com/Sweax3169/sweaxbrush)
+
+<br>
+
 <a href="https://github.com/Sweax3169/sweaxnext">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="art/sweaxnext-dark.svg">
@@ -251,8 +289,11 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 </td>
 </tr>
 <tr>
-<td colspan="2" align="center">
-<a href="https://sweax3169.github.io/roblox-games/"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-robloxgames-dark.svg"><img alt="Roblox Games — the Sweax Studios games on Roblox, two released and one in development, each with its own page and play link. English and Turkish." src="art/card-robloxgames-light.svg" width="50%"></picture></a>
+<td width="50%">
+<a href="https://github.com/Sweax3169/sweaxbrush"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxbrush-dark.svg"><img alt="Sweax Brush — Roblox Studio plugin: place, scatter, draw and erase details on any surface, English and Turkish. Luau, three.js demo. Open source." src="art/card-sweaxbrush-light.svg" width="100%"></picture></a>
+</td>
+<td width="50%">
+<a href="https://sweax3169.github.io/roblox-games/"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-robloxgames-dark.svg"><img alt="Roblox Games — the Sweax Studios games on Roblox, two released and one in development, each with its own page and play link. English and Turkish." src="art/card-robloxgames-light.svg" width="100%"></picture></a>
 </td>
 </tr>
 </table>
