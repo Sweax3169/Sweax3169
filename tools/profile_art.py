@@ -86,7 +86,7 @@ def banner(theme):
 
 CARDS = [
     ('sweaxmorph', 'SweaxMorph', ['Drop any file on Morph, pick a format, done.', '126 formats for Windows, offline.'], 'C# · .NET 9 · WPF · FFmpeg · ImageMagick', 'Open source', 'shot', 'morph'),
-    ('sweaxterrain', 'Sweax Terrain', ['Roblox Studio plugin that paints terrain:', '9 biomes and 8 ready-made worlds.'], 'Luau · Roblox Studio plugin', 'Plugin', 'code', 'T'),
+    ('sweaxterrain', 'Sweax Terrain', ['Roblox Studio plugin: worlds from 9 blended biomes,', 'a brush and box eraser, 54 structures.'], 'Luau · Roblox Studio plugin · WebGL2 demo', 'Open source', 'code', 'terrain'),
     ('sweaxclip', 'SweaxClip', ['Permanent, searchable clipboard history for', 'Windows. Replaces Win + V; reads screenshots.'], 'C# · .NET 9 · WPF · SQLite FTS5', 'Open source', 'link', 'deck'),
     ('sweaxcut', 'SWEAXCUT 3', ['Offline video editor for Windows: one-click', 'edits, word-by-word captions you can restyle.'], 'Electron · React · WebGL2 · FFmpeg · whisper.cpp', 'Open source', 'accent', 'cut'),
     ('sweaxnext', 'SWEAX NEXT', ['Vocal mixing plugin for rap: 12 vocal chains,', '159 automated tests, pluginval strictness 10.'], 'C++ · JUCE · VST3', 'VST3', 'code', 'N'),
@@ -136,10 +136,21 @@ def games_icon(x, y, size):
             f'<rect x="{x + 8 * k:.1f}" y="{y + 28 * k:.1f}" width="{11 * k:.1f}" height="{11 * k:.1f}" fill="#6EB450"/>')
 
 
+def terrain_icon(x, y, size):
+    """Sweax Terrain's mark: an isometric block of terrain with a snowy peak (32-unit grid)."""
+    k = size / 32
+    P = lambda pts: " ".join(f"{x + a * k:.1f},{y + b * k:.1f}" for a, b in pts)
+    return (f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="13" fill="#132019"/>'
+            f'<polygon points="{P([(16, 5), (27, 11.5), (16, 18), (5, 11.5)])}" fill="#6F9D3C"/>'
+            f'<polygon points="{P([(5, 11.5), (16, 18), (16, 27.5), (5, 21)])}" fill="#8A6A45"/>'
+            f'<polygon points="{P([(27, 11.5), (16, 18), (16, 27.5), (27, 21)])}" fill="#6B7075"/>'
+            f'<polygon points="{P([(12.9, 10.4), (16, 7.2), (19.1, 10.4), (17.5, 10), (16, 11.1), (14.6, 10.1)])}" fill="#F4F6FA"/>')
+
+
 def card(theme, key, name, lines, stack, status, hue, initial):
     c = T[theme]
     W, H = 600, 210
-    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
+    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else terrain_icon(28, 30, 46) if initial == 'terrain' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
     sw = 34 + 7.6 * len(status)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{name}">
 {defs(c)}

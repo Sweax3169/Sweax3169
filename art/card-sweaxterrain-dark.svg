@@ -12,12 +12,12 @@
 <rect width="600" height="210" rx="18" fill="url(#pf)"/>
 <rect x=".5" y=".5" width="599" height="209" rx="17.5" fill="none" stroke="rgba(255,255,255,.10)"/>
 <rect x="0" y="30" width="3" height="46" rx="1.5" fill="#5CD6B4"/>
-<rect x="28" y="30" width="46" height="46" rx="13" fill="#5CD6B4"/><text x="51" y="61" text-anchor="middle" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#fff">T</text>
+<rect x="28" y="30" width="46" height="46" rx="13" fill="#132019"/><polygon points="51.0,37.2 66.8,46.5 51.0,55.9 35.2,46.5" fill="#6F9D3C"/><polygon points="35.2,46.5 51.0,55.9 51.0,69.5 35.2,60.2" fill="#8A6A45"/><polygon points="66.8,46.5 51.0,55.9 51.0,69.5 66.8,60.2" fill="#6B7075"/><polygon points="46.5,45.0 51.0,40.4 55.5,45.0 53.2,44.4 51.0,46.0 49.0,44.5" fill="#F4F6FA"/>
 <text x="92" y="60" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="650" fill="#F2EFE9">Sweax Terrain</text>
-<rect x="492.4" y="36" width="79.6" height="26" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
-<circle cx="505.4" cy="49" r="3.5" fill="#5CD6B4"/>
-<text x="514.4" y="54" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="rgba(242,239,233,.70)">Plugin</text>
-<text x="28" y="116" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">Roblox Studio plugin that paints terrain:</text>
-<text x="28" y="140" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">9 biomes and 8 ready-made worlds.</text>
-<text x="28" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="rgba(242,239,233,.42)">Luau · Roblox Studio plugin</text>
+<rect x="454.4" y="36" width="117.6" height="26" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<circle cx="467.4" cy="49" r="3.5" fill="#5CD6B4"/>
+<text x="476.4" y="54" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="rgba(242,239,233,.70)">Open source</text>
+<text x="28" y="116" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">Roblox Studio plugin: worlds from 9 blended biomes,</text>
+<text x="28" y="140" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">a brush and box eraser, 54 structures.</text>
+<text x="28" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="rgba(242,239,233,.42)">Luau · Roblox Studio plugin · WebGL2 demo</text>
 </svg>

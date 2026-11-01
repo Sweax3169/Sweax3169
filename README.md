@@ -142,6 +142,47 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 
 <br>
 
+<a href="https://github.com/Sweax3169/sweaxterrain">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxterrain-dark.svg">
+    <img alt="Sweax Terrain: generate, erase and build worlds in Roblox Studio. 9 biomes, 8 worlds, 54 structures, Ctrl+Z on every step." src="art/sweaxterrain-light.svg" width="100%">
+  </picture>
+</a>
+
+**[Sweax Terrain](https://github.com/Sweax3169/sweaxterrain)** is a terrain plugin for Roblox Studio. Nine biomes blend into each other by weight, with lakes, rivers, an ocean edge and caves; a brush or a two-corner box erases any terrain in the place; 44 structures and 10 landforms drop onto the ground behind a see-through preview. Every step is one <kbd>Ctrl</kbd> + <kbd>Z</kbd>, and the panel speaks English and Turkish.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxterrain-demo-dark.gif">
+    <img alt="A world is generated parcel by parcel, a brush carves a path across river plains, then ten structures are placed one by one." src="art/sweaxterrain-demo-light.gif" width="680">
+  </picture>
+</p>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Inside**
+- A two-pass generator: a domain-warped height map, then materials, rock outcrops and caves per voxel, written in 24 × 24 column parcels
+- 2048 × 2048 studs in one run; 512 × 512 takes 0.30 s
+- 54 structures and landforms built from plain parts, so there is nothing to upload
+
+</td>
+<td width="50%" valign="top">
+
+**Shipped with**
+- A JavaScript port of the generator that matches Studio column for column (238,848 columns checked)
+- README art drawn from real plugin output: voxels read back from Studio and rendered in Blender
+- A [website](https://sweax3169.github.io/sweaxterrain/) where the plugin's own panel and generator run in the browser
+
+</td>
+</tr>
+</table>
+
+[Download](https://github.com/Sweax3169/sweaxterrain/releases/latest) · [Website](https://sweax3169.github.io/sweaxterrain/) · [Source](https://github.com/Sweax3169/sweaxterrain)
+
+<br>
+
 ## Selected work
 
 <table>
@@ -166,7 +207,7 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 <a href="https://github.com/Sweax3169/sweaxbeacon"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxbeacon-dark.svg"><img alt="SweaxBeacon — Minecraft Java powers, items and world controls on a server, a LAN world or single-player, with no login. Electron, React, C#. Open source." src="art/card-sweaxbeacon-light.svg" width="100%"></picture></a>
 </td>
 <td width="50%">
-<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxterrain-dark.svg"><img alt="Sweax Terrain — Roblox Studio plugin that paints terrain: 9 biomes and 8 ready-made worlds. Luau. Plugin." src="art/card-sweaxterrain-light.svg" width="100%"></picture>
+<a href="https://github.com/Sweax3169/sweaxterrain"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxterrain-dark.svg"><img alt="Sweax Terrain — Roblox Studio plugin: worlds from 9 blended biomes, a brush and box eraser, 54 structures. Luau, WebGL2 demo. Open source." src="art/card-sweaxterrain-light.svg" width="100%"></picture></a>
 </td>
 </tr>
 <tr>
