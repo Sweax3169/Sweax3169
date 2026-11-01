@@ -85,6 +85,7 @@ def banner(theme):
 
 
 CARDS = [
+    ('sweaxdrop', 'SweaxDrop', ['Files between your PC and your phones on parallel', 'encrypted lanes. Windows, Android, iPhone.'], 'Rust · Tauri · Kotlin · Swift · Svelte', 'Open source', 'link', 'drop'),
     ('sweaxiris', 'SweaxIris', ['Screen recorder for Windows: a region in two keys,', 'pause into the same file, GPU encoding.'], 'C# · .NET 9 · WPF · Direct3D 11 · FFmpeg', 'Open source', 'code', 'iris'),
     ('sweaxmorph', 'SweaxMorph', ['Drop any file on Morph, pick a format, done.', '126 formats for Windows, offline.'], 'C# · .NET 9 · WPF · FFmpeg · ImageMagick', 'Open source', 'shot', 'morph'),
     ('sweaxterrain', 'Sweax Terrain', ['Roblox Studio plugin: worlds from 9 blended biomes,', 'a brush and box eraser, 54 structures.'], 'Luau · Roblox Studio plugin · WebGL2 demo', 'Open source', 'code', 'terrain'),
@@ -193,10 +194,21 @@ def iris_icon(x, y, size):
             f'<polygon points="{hole}" fill="url(#irg)"/>{edges}')
 
 
+def drop_icon(x, y, size):
+    """SweaxDrop's mark: three lanes, the middle one carrying the drop."""
+    k = size / 32
+    return (f'<g transform="translate({x} {y}) scale({k:.4f})">'
+            f'<rect width="32" height="32" rx="9" fill="#12151a"/>'
+            f'<rect x="6" y="9.2" width="12" height="3" rx="1.5" fill="#eef0ec" opacity=".55"/>'
+            f'<rect x="6" y="14.5" width="14.5" height="3" rx="1.5" fill="#eef0ec"/>'
+            f'<rect x="6" y="19.8" width="9" height="3" rx="1.5" fill="#eef0ec" opacity=".55"/>'
+            f'<circle cx="24.2" cy="16" r="2.9" fill="#6f86ff"/></g>')
+
+
 def card(theme, key, name, lines, stack, status, hue, initial):
     c = T[theme]
     W, H = 600, 210
-    icon = mark(26, 30, 0.19) if initial == 'deck' else iris_icon(28, 30, 46) if initial == 'iris' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else next_icon(28, 30, 46) if initial == 'next' else terrain_icon(28, 30, 46) if initial == 'terrain' else brush_icon(28, 30, 46) if initial == 'brush' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
+    icon = mark(26, 30, 0.19) if initial == 'deck' else drop_icon(28, 30, 46) if initial == 'drop' else iris_icon(28, 30, 46) if initial == 'iris' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else next_icon(28, 30, 46) if initial == 'next' else terrain_icon(28, 30, 46) if initial == 'terrain' else brush_icon(28, 30, 46) if initial == 'brush' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
     sw = 34 + 7.6 * len(status)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{name}">
 {defs(c)}

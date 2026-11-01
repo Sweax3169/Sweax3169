@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="SweaxDrop">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#13120F"/><stop offset="1" stop-color="#0C0B0A"/></linearGradient>
+  <linearGradient id="pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F1E1C"/><stop offset="1" stop-color="#171615"/></linearGradient>
+  <radialGradient id="g1"><stop offset="0" stop-color="#FF6A3D" stop-opacity=".22"/><stop offset="1" stop-color="#FF6A3D" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2"><stop offset="0" stop-color="#A78BFA" stop-opacity=".14"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g3"><stop offset="0" stop-color="#5CD6B4" stop-opacity=".14"/><stop offset="1" stop-color="#5CD6B4" stop-opacity="0"/></radialGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="16"/><feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="sh2" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  
+</defs>
+<rect width="600" height="210" rx="18" fill="url(#pf)"/>
+<rect x=".5" y=".5" width="599" height="209" rx="17.5" fill="none" stroke="rgba(255,255,255,.10)"/>
+<rect x="0" y="30" width="3" height="46" rx="1.5" fill="#7DA8FF"/>
+<g transform="translate(28 30) scale(1.4375)"><rect width="32" height="32" rx="9" fill="#12151a"/><rect x="6" y="9.2" width="12" height="3" rx="1.5" fill="#eef0ec" opacity=".55"/><rect x="6" y="14.5" width="14.5" height="3" rx="1.5" fill="#eef0ec"/><rect x="6" y="19.8" width="9" height="3" rx="1.5" fill="#eef0ec" opacity=".55"/><circle cx="24.2" cy="16" r="2.9" fill="#6f86ff"/></g>
+<text x="92" y="60" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="650" fill="#F2EFE9">SweaxDrop</text>
+<rect x="454.4" y="36" width="117.6" height="26" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<circle cx="467.4" cy="49" r="3.5" fill="#7DA8FF"/>
+<text x="476.4" y="54" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="rgba(242,239,233,.70)">Open source</text>
+<text x="28" y="116" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">Files between your PC and your phones on parallel</text>
+<text x="28" y="140" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">encrypted lanes. Windows, Android, iPhone.</text>
+<text x="28" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="rgba(242,239,233,.42)">Rust · Tauri · Kotlin · Swift · Svelte</text>
+</svg>

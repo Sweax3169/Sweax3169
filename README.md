@@ -23,6 +23,46 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 
 ## Featured
 
+<a href="https://github.com/Sweax3169/sweaxdrop">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxdrop-dark.svg">
+    <img alt="SweaxDrop: your files, on parallel lanes. Files, photos, folders and text between Windows, Android and iPhone." src="art/sweaxdrop-light.svg" width="100%">
+  </picture>
+</a>
+
+**[SweaxDrop](https://github.com/Sweax3169/sweaxdrop)** sends files, photos, videos, whole folders, text and the clipboard between a PC and phones over your own Wi-Fi. Devices find each other, every transfer runs on parallel TLS 1.3 lanes and is checked chunk by chunk with BLAKE3, and a dropped connection resumes from the last verified chunk. Windows, Android and iPhone share one Rust core and one interface; an iPhone without the app scans a QR code and uses it in the browser.
+
+<p align="center">
+  <img alt="SweaxDrop on Windows: three files dropped on an iPhone, twelve photos accepted from it, the speed curve in history." src="art/sweaxdrop-demo.gif" width="680">
+</p>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Inside**
+- One Rust core: discovery (multicast, broadcast, mDNS), mutual TLS 1.3 pinned by Ed25519 key, SPAKE2 PIN and QR pairing
+- Up to 16 lanes pulling 4 MiB chunks from one queue, no request per file, reads, hashes and writes on their own threads
+- Windows app in Tauri (tray, Send to, drag and drop), Android in Kotlin over JNI, iPhone in Swift over a C ABI
+- A browser client served by the PC for phones without the app
+
+</td>
+<td width="50%" valign="top">
+
+**Shipped with**
+- Measured against the official LocalSend 1.18.2 on the same PC and files: 4.8× faster with 200 photos, 3.0× with 10 000 small files, 3.4× with 300 small files, and a tie on one 4 GiB file, where the disk is the limit
+- Tests for transfers, resume after a cut connection, wrong keys, PIN and QR pairing
+- Android checked on the emulator in both directions, byte-identical; iOS built on a macOS runner
+- A [website](https://sweax3169.github.io/sweaxdrop/) with the real interface running on a pretend network
+
+</td>
+</tr>
+</table>
+
+[Download](https://github.com/Sweax3169/sweaxdrop/releases/latest) · [Website](https://sweax3169.github.io/sweaxdrop/) · [Source](https://github.com/Sweax3169/sweaxdrop)
+
+<br>
+
 <a href="https://github.com/Sweax3169/sweaxiris">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="art/sweaxiris-dark.svg">
@@ -343,7 +383,9 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 <td width="50%">
 <a href="https://github.com/Sweax3169/sweaxiris"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxiris-dark.svg"><img alt="SweaxIris — screen recorder for Windows: a region in two keys, pause into the same file, GPU encoding. C#, .NET 9, WPF, Direct3D 11, FFmpeg. Open source." src="art/card-sweaxiris-light.svg" width="100%"></picture></a>
 </td>
-<td width="50%"></td>
+<td width="50%">
+<a href="https://github.com/Sweax3169/sweaxdrop"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxdrop-dark.svg"><img alt="SweaxDrop — files between a PC and phones on parallel encrypted lanes, resumes after a drop. Rust, Tauri, Kotlin, Swift. Open source." src="art/card-sweaxdrop-light.svg" width="100%"></picture></a>
+</td>
 </tr>
 </table>
 
