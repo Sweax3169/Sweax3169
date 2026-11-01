@@ -85,6 +85,7 @@ def banner(theme):
 
 
 CARDS = [
+    ('sweaxiris', 'SweaxIris', ['Screen recorder for Windows: a region in two keys,', 'pause into the same file, GPU encoding.'], 'C# · .NET 9 · WPF · Direct3D 11 · FFmpeg', 'Open source', 'code', 'iris'),
     ('sweaxmorph', 'SweaxMorph', ['Drop any file on Morph, pick a format, done.', '126 formats for Windows, offline.'], 'C# · .NET 9 · WPF · FFmpeg · ImageMagick', 'Open source', 'shot', 'morph'),
     ('sweaxterrain', 'Sweax Terrain', ['Roblox Studio plugin: worlds from 9 blended biomes,', 'a brush and box eraser, 54 structures.'], 'Luau · Roblox Studio plugin · WebGL2 demo', 'Open source', 'code', 'terrain'),
     ('sweaxbrush', 'Sweax Brush', ['Roblox Studio plugin: place, scatter, draw and', 'erase details on any surface. EN and TR.'], 'Luau · Roblox Studio plugin · three.js demo', 'Open source', 'code', 'brush'),
@@ -166,10 +167,36 @@ def brush_icon(x, y, size):
             + R(9.2, 9.6, 2.8, 2.8) + R(14.6, 8.2, 2.8, 2.8) + R(15.2, 14.4, 2.8, 2.8) + R(9.8, 15.2, 2.2, 2.2) + R(12.4, 11.9, 2.2, 2.2))
 
 
+def iris_icon(x, y, size):
+    """SweaxIris's mark: a seven-blade camera iris with the teal coating light coming through."""
+    import math
+    cx, cy, rb = x + size / 2, y + size / 2, size * 0.42
+    ap, n = 0.5, 7
+    r = rb * (0.06 + 0.86 * ap)
+    th = math.radians((1 - ap) * 58) - math.pi / 2
+    v = [(cx + math.cos(th + i * 2 * math.pi / n) * r, cy + math.sin(th + i * 2 * math.pi / n) * r) for i in range(n)]
+    hole = ' '.join(f'{a:.1f},{b:.1f}' for a, b in v)
+    edges = ''
+    for j in range(n):
+        fx, fy = v[(j - 1) % n]
+        dx, dy = v[j][0] - fx, v[j][1] - fy
+        ln = math.hypot(dx, dy)
+        dx, dy = dx / ln, dy / ln
+        px, py = v[j][0] - cx, v[j][1] - cy
+        b = 2 * (px * dx + py * dy)
+        c = px * px + py * py - rb * rb
+        t = (-b + math.sqrt(max(0, b * b - 4 * c))) / 2
+        edges += f'<line x1="{v[j][0]:.1f}" y1="{v[j][1]:.1f}" x2="{v[j][0] + dx * t:.1f}" y2="{v[j][1] + dy * t:.1f}" stroke="#4A535F" stroke-width="1.2"/>'
+    return (f'<defs><radialGradient id="irg" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#9FF2E2"/><stop offset=".5" stop-color="#2BD4B4"/><stop offset="1" stop-color="#0E6E62"/></radialGradient></defs>'
+            f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="13" fill="#101317"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{rb:.1f}" fill="#232830" stroke="#3A424E" stroke-width="1.2"/>'
+            f'<polygon points="{hole}" fill="url(#irg)"/>{edges}')
+
+
 def card(theme, key, name, lines, stack, status, hue, initial):
     c = T[theme]
     W, H = 600, 210
-    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else next_icon(28, 30, 46) if initial == 'next' else terrain_icon(28, 30, 46) if initial == 'terrain' else brush_icon(28, 30, 46) if initial == 'brush' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
+    icon = mark(26, 30, 0.19) if initial == 'deck' else iris_icon(28, 30, 46) if initial == 'iris' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else next_icon(28, 30, 46) if initial == 'next' else terrain_icon(28, 30, 46) if initial == 'terrain' else brush_icon(28, 30, 46) if initial == 'brush' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
     sw = 34 + 7.6 * len(status)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{name}">
 {defs(c)}

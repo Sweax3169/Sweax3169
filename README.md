@@ -23,6 +23,49 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 
 ## Featured
 
+<a href="https://github.com/Sweax3169/sweaxiris">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxiris-dark.svg">
+    <img alt="SweaxIris: a screen recorder for Windows that opens like a lens. A screen, a window or a region you draw, with system sound and microphone." src="art/sweaxiris-light.svg" width="100%">
+  </picture>
+</a>
+
+**[SweaxIris](https://github.com/Sweax3169/sweaxiris)** is a screen recorder for Windows. Record a whole monitor, one window or a region you draw with a screenshot-style picker, with system sound and your microphone, each with its own switch, volume and meter. Pause and resume carry on in the same file, and every action has a shortcut you set by pressing it, macro keys included. The record button is a camera iris: it opens when you record and stops down with each second of the countdown.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="art/sweaxiris-demo-dark.gif">
+    <img alt="The SweaxIris studio: the iris counts down 3-2-1, records with live sound meters, pauses, resumes and saves a take." src="art/sweaxiris-demo-light.gif" width="680">
+  </picture>
+</p>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Inside**
+- Windows.Graphics.Capture with a ring of timestamped frames, so each tick takes the frame composed at its moment (24–240 fps)
+- Direct3D 11 video engine for scaling and NV12; NVENC and AMF read straight from video memory, Quick Sync and x264 through staging
+- Own WASAPI capture (speakers, microphone, one app) and a mixer that places sound by time and absorbs clock drift
+- One timeline for picture and sound that stops while paused
+
+</td>
+<td width="50%" valign="top">
+
+**Shipped with**
+- A self-test that records only its own test pattern and tone and checks every frame and every flash against every tone
+- No dropped frames from 1080p60 to 4K60 HEVC and 1440p144 on NVENC; sound and picture within a frame across pauses
+- README films drawn by the app itself, frame by frame, with a made-up game and desktop
+- A [website](https://sweax3169.github.io/sweaxiris/) with a working iris button and a macro-key tester
+
+</td>
+</tr>
+</table>
+
+[Download](https://github.com/Sweax3169/sweaxiris/releases/latest) · [Website](https://sweax3169.github.io/sweaxiris/) · [Source](https://github.com/Sweax3169/sweaxiris)
+
+<br>
+
 <a href="https://github.com/Sweax3169/sweaxmorph">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="art/sweaxmorph-dark.svg">
@@ -295,6 +338,12 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 <td width="50%">
 <a href="https://sweax3169.github.io/roblox-games/"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-robloxgames-dark.svg"><img alt="Roblox Games — the Sweax Studios games on Roblox, two released and one in development, each with its own page and play link. English and Turkish." src="art/card-robloxgames-light.svg" width="100%"></picture></a>
 </td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://github.com/Sweax3169/sweaxiris"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-sweaxiris-dark.svg"><img alt="SweaxIris — screen recorder for Windows: a region in two keys, pause into the same file, GPU encoding. C#, .NET 9, WPF, Direct3D 11, FFmpeg. Open source." src="art/card-sweaxiris-light.svg" width="100%"></picture></a>
+</td>
+<td width="50%"></td>
 </tr>
 </table>
 

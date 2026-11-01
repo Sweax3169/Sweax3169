@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="SweaxIris">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#13120F"/><stop offset="1" stop-color="#0C0B0A"/></linearGradient>
+  <linearGradient id="pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F1E1C"/><stop offset="1" stop-color="#171615"/></linearGradient>
+  <radialGradient id="g1"><stop offset="0" stop-color="#FF6A3D" stop-opacity=".22"/><stop offset="1" stop-color="#FF6A3D" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g2"><stop offset="0" stop-color="#A78BFA" stop-opacity=".14"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+  <radialGradient id="g3"><stop offset="0" stop-color="#5CD6B4" stop-opacity=".14"/><stop offset="1" stop-color="#5CD6B4" stop-opacity="0"/></radialGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="16"/><feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="sh2" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  
+</defs>
+<rect width="600" height="210" rx="18" fill="url(#pf)"/>
+<rect x=".5" y=".5" width="599" height="209" rx="17.5" fill="none" stroke="rgba(255,255,255,.10)"/>
+<rect x="0" y="30" width="3" height="46" rx="1.5" fill="#5CD6B4"/>
+<defs><radialGradient id="irg" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#9FF2E2"/><stop offset=".5" stop-color="#2BD4B4"/><stop offset="1" stop-color="#0E6E62"/></radialGradient></defs><rect x="28" y="30" width="46" height="46" rx="13" fill="#101317"/><circle cx="51.0" cy="53.0" r="19.3" fill="#232830" stroke="#3A424E" stroke-width="1.2"/><polygon points="55.6,44.7 60.3,51.4 58.1,59.3 50.5,62.5 43.3,58.5 41.9,50.4 47.4,44.2" fill="url(#irg)"/><line x1="55.6" y1="44.7" x2="68.8" y2="45.5" stroke="#4A535F" stroke-width="1.2"/><line x1="60.3" y1="51.4" x2="68.0" y2="62.2" stroke="#4A535F" stroke-width="1.2"/><line x1="58.1" y1="59.3" x2="54.4" y2="72.0" stroke="#4A535F" stroke-width="1.2"/><line x1="50.5" y1="62.5" x2="38.2" y2="67.5" stroke="#4A535F" stroke-width="1.2"/><line x1="43.3" y1="58.5" x2="31.7" y2="52.1" stroke="#4A535F" stroke-width="1.2"/><line x1="41.9" y1="50.4" x2="39.7" y2="37.3" stroke="#4A535F" stroke-width="1.2"/><line x1="47.4" y1="44.2" x2="56.2" y2="34.4" stroke="#4A535F" stroke-width="1.2"/>
+<text x="92" y="60" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="650" fill="#F2EFE9">SweaxIris</text>
+<rect x="454.4" y="36" width="117.6" height="26" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.10)"/>
+<circle cx="467.4" cy="49" r="3.5" fill="#5CD6B4"/>
+<text x="476.4" y="54" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="600" fill="rgba(242,239,233,.70)">Open source</text>
+<text x="28" y="116" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">Screen recorder for Windows: a region in two keys,</text>
+<text x="28" y="140" font-family="'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="rgba(242,239,233,.70)">pause into the same file, GPU encoding.</text>
+<text x="28" y="184" font-family="'Cascadia Mono',Consolas,'SF Mono',Menlo,monospace" font-size="12.5" fill="rgba(242,239,233,.42)">C# · .NET 9 · WPF · Direct3D 11 · FFmpeg</text>
+</svg>
