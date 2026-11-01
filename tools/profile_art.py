@@ -90,7 +90,7 @@ CARDS = [
     ('sweaxclip', 'SweaxClip', ['Permanent, searchable clipboard history for', 'Windows. Replaces Win + V; reads screenshots.'], 'C# · .NET 9 · WPF · SQLite FTS5', 'Open source', 'link', 'deck'),
     ('sweaxcut', 'SWEAXCUT 3', ['Offline video editor for Windows: one-click', 'edits, word-by-word captions you can restyle.'], 'Electron · React · WebGL2 · FFmpeg · whisper.cpp', 'Open source', 'accent', 'cut'),
     ('sweaxnext', 'SWEAX NEXT', ['Vocal mixing plugin for rap: 12 vocal chains,', '159 automated tests, pluginval strictness 10.'], 'C++ · JUCE · VST3', 'VST3', 'code', 'N'),
-    ('sweaxpanel', 'SweaxPanel', ['Desktop control panel for Minecraft servers', 'over RCON — six tabs, tested on Paper 1.21.'], 'Electron · React · RCON', 'Open source', 'shot', 'P'),
+    ('sweaxbeacon', 'SweaxBeacon', ['Minecraft Java powers, items and world controls', 'on a server, a LAN world or single-player.'], 'Electron · React · C# · RCON', 'Open source', 'shot', 'beacon'),
     ('popit', '+1 Speed POP IT', ['Roblox game with session-locked saves and', 'a phone-friendly world of 70,000+ parts.'], 'Luau · Roblox Studio', 'Released', 'image', '+1'),
     ('adana', 'Adana Mücadele', ['Website and member platform for an MMA', 'club, live with real members.'], 'Cloudflare Workers · D1 · R2', 'Live', 'files', 'A'),
 ]
@@ -114,10 +114,20 @@ def cut_icon(x, y, size):
     return f'''<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="13" fill="#13161C"/><path d="{left}" fill="#F4F6FA"/><path d="{right}" fill="#FF4B3E" transform="translate({0.5 * k:.1f} {-1.3 * k:.1f})"/>'''
 
 
+def beacon_icon(x, y, size):
+    """SweaxBeacon's mark: a beacon on a three-step pyramid with its beam (32-unit grid)."""
+    k = size / 32
+    R = lambda a, b, w, h, f: f'<rect x="{x + a * k:.1f}" y="{y + b * k:.1f}" width="{w * k:.1f}" height="{h * k:.1f}" fill="{f}"/>'
+    return (f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="13" fill="#120D1B"/>'
+            + R(14, 3, 4, 10, '#8EF6FF') + R(4, 25, 24, 4, '#2B1F40') + R(4, 25, 24, 1, '#4A3870') + R(7, 21, 18, 4, '#3A2B57')
+            + R(7, 21, 18, 1, '#5E4A8F') + R(10, 17, 12, 4, '#4D3A75') + R(10, 17, 12, 1, '#7A62B0') + R(12, 11, 8, 7, '#BFF3FA')
+            + R(13, 12, 6, 5, '#5FD0E2') + R(14, 13, 4, 3, '#FFFFFF'))
+
+
 def card(theme, key, name, lines, stack, status, hue, initial):
     c = T[theme]
     W, H = 600, 210
-    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
+    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
     sw = 34 + 7.6 * len(status)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{name}">
 {defs(c)}
