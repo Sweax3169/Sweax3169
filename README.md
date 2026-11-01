@@ -70,12 +70,12 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
   </picture>
 </a>
 
-**[SweaxIris](https://github.com/Sweax3169/sweaxiris)** is a screen recorder for Windows. Record a whole monitor, one window or a region you draw with a screenshot-style picker, with system sound and your microphone, each with its own switch, volume and meter. Pause and resume carry on in the same file, and every action has a shortcut you set by pressing it, macro keys included. The record button is a camera iris: it opens when you record and stops down with each second of the countdown.
+**[SweaxIris](https://github.com/Sweax3169/sweaxiris)** is a screen recorder for Windows. Every monitor, every open window and your last region wait in the studio as live pictures: click one and that is what records, with system sound and your microphone on faders that double as level meters. Regions come from a picker with frame shapes (16:9, 9:16, 1:1, 4:3), exact sizes, snapping and a pixel loupe. Pause and resume carry on in the same file, and every action has a shortcut you set by pressing it, macro keys included. The record button is a camera iris: it opens when you record and stops down with each second of the countdown.
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="art/sweaxiris-demo-dark.gif">
-    <img alt="The SweaxIris studio: the iris counts down 3-2-1, records with live sound meters, pauses, resumes and saves a take." src="art/sweaxiris-demo-light.gif" width="680">
+    <img alt="The SweaxIris studio: live pictures of every window and screen, one is chosen, the iris counts down, the program picture records, pauses, resumes, and the take lands in Takes." src="art/sweaxiris-demo-light.gif" width="680">
   </picture>
 </p>
 
@@ -96,7 +96,7 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 - A self-test that records only its own test pattern and tone and checks every frame and every flash against every tone
 - No dropped frames from 1080p60 to 4K60 HEVC and 1440p144 on NVENC; sound and picture within a frame across pauses
 - README films drawn by the app itself, frame by frame, with a made-up game and desktop
-- A [website](https://sweax3169.github.io/sweaxiris/) with a working iris button and a macro-key tester
+- A [website](https://sweax3169.github.io/sweaxiris/) with a working iris button, an in-browser copy of the region picker and a macro-key tester
 
 </td>
 </tr>
