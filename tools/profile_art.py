@@ -91,7 +91,7 @@ CARDS = [
     ('sweaxcut', 'SWEAXCUT 3', ['Offline video editor for Windows: one-click', 'edits, word-by-word captions you can restyle.'], 'Electron · React · WebGL2 · FFmpeg · whisper.cpp', 'Open source', 'accent', 'cut'),
     ('sweaxnext', 'SWEAX NEXT', ['Vocal mixing plugin for rap: 12 vocal chains,', '159 automated tests, pluginval strictness 10.'], 'C++ · JUCE · VST3', 'VST3', 'code', 'N'),
     ('sweaxbeacon', 'SweaxBeacon', ['Minecraft Java powers, items and world controls', 'on a server, a LAN world or single-player.'], 'Electron · React · C# · RCON', 'Open source', 'shot', 'beacon'),
-    ('popit', '+1 Speed POP IT', ['Roblox game with session-locked saves and', 'a phone-friendly world of 70,000+ parts.'], 'Luau · Roblox Studio', 'Released', 'image', '+1'),
+    ('robloxgames', 'Roblox Games', ['Sweax Studios games on Roblox: two released,', 'one in development, each with its own page.'], 'Luau · Roblox Studio · GitHub Pages', 'Website', 'image', 'games'),
     ('adana', 'Adana Mücadele', ['Website and member platform for an MMA', 'club, live with real members.'], 'Cloudflare Workers · D1 · R2', 'Live', 'files', 'A'),
 ]
 
@@ -124,10 +124,22 @@ def beacon_icon(x, y, size):
             + R(13, 12, 6, 5, '#5FD0E2') + R(14, 13, 4, 3, '#FFFFFF'))
 
 
+def games_icon(x, y, size):
+    """Roblox Games: one piece of each game's world: a pop-it bubble, an ore block, the roll's rarity hexagon (46-unit grid)."""
+    k = size / 46
+    hx, hy, r = x + 30 * k, y + 32 * k, 9 * k
+    hexagon = ' '.join(f'{hx + r * a:.1f},{hy + r * b:.1f}' for a, b in ((0, -1), (.87, -.5), (.87, .5), (0, 1), (-.87, .5), (-.87, -.5)))
+    return (f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="13" fill="#16131C"/>'
+            f'<circle cx="{x + 15 * k:.1f}" cy="{y + 15 * k:.1f}" r="{8 * k:.1f}" fill="#FF4FA3"/><circle cx="{x + 12.5 * k:.1f}" cy="{y + 12 * k:.1f}" r="{2.6 * k:.1f}" fill="#fff" opacity=".6"/>'
+            f'<rect x="{x + 25 * k:.1f}" y="{y + 6 * k:.1f}" width="{15 * k:.1f}" height="{15 * k:.1f}" fill="#52E1EA"/><rect x="{x + 25 * k:.1f}" y="{y + 6 * k:.1f}" width="{15 * k:.1f}" height="{4 * k:.1f}" fill="#BDFBFF"/>'
+            f'<polygon points="{hexagon}" fill="none" stroke="#E1AE43" stroke-width="{2.6 * k:.1f}"/><circle cx="{hx:.1f}" cy="{hy:.1f}" r="{3 * k:.1f}" fill="#E1AE43"/>'
+            f'<rect x="{x + 8 * k:.1f}" y="{y + 28 * k:.1f}" width="{11 * k:.1f}" height="{11 * k:.1f}" fill="#6EB450"/>')
+
+
 def card(theme, key, name, lines, stack, status, hue, initial):
     c = T[theme]
     W, H = 600, 210
-    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
+    icon = mark(26, 30, 0.19) if initial == 'deck' else morph_icon(51, 53, 23) if initial == 'morph' else cut_icon(28, 30, 46) if initial == 'cut' else beacon_icon(28, 30, 46) if initial == 'beacon' else games_icon(28, 30, 46) if initial == 'games' else f'<rect x="28" y="30" width="46" height="46" rx="13" fill="{c[hue]}"/><text x="51" y="61" text-anchor="middle" font-family="{FONT}" font-size="{19 if len(initial) > 1 else 22}" font-weight="700" fill="#fff">{initial}</text>'
     sw = 34 + 7.6 * len(status)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{name}">
 {defs(c)}

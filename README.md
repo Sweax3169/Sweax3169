@@ -171,7 +171,7 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 </tr>
 <tr>
 <td colspan="2" align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="art/card-popit-dark.svg"><img alt="+1 Speed POP IT — Roblox game with session-locked saves and a phone-friendly world of 70,000+ parts. Luau. Released." src="art/card-popit-light.svg" width="50%"></picture>
+<a href="https://sweax3169.github.io/roblox-games/"><picture><source media="(prefers-color-scheme: dark)" srcset="art/card-robloxgames-dark.svg"><img alt="Roblox Games — the Sweax Studios games on Roblox, two released and one in development, each with its own page and play link. English and Turkish." src="art/card-robloxgames-light.svg" width="50%"></picture></a>
 </td>
 </tr>
 </table>
@@ -183,8 +183,6 @@ I'm an independent developer from Türkiye, working as **Sweax Studios**. I buil
 | Project | What it is | Built with | Status |
 | --- | --- | --- | --- |
 | Sweax Rhythm Trainer | Metronome, tap tempo and auto-quantize for practising timing | C++, JUCE | VST3 |
-| RNG Zombie Defense | Roblox wave-defense game: 40 waves, 11 themes, 17 languages | Luau | In development |
-| Maden Farm | Roblox mining tycoon with client-side ore physics at 60 FPS | Luau | In development |
 
 </details>
 
